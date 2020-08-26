@@ -15,6 +15,7 @@
     <com.sample.motionlayoutfragment.TouchFrameLayout
         android:id="@+id/flProfile"
         android:layout_width="match_parent"
+        android:background="@drawable/top_rounded_corners"
         android:layout_height="56dp" />
 
     <View

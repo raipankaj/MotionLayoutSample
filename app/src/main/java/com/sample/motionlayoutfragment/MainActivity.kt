@@ -9,8 +9,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val button = findViewById<ImageFilterButton>(R.id.ifbThumbsUp)
         
         supportFragmentManager.beginTransaction()
             .add(R.id.flProfile, ProfileFragment())

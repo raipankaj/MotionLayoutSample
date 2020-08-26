@@ -35,6 +35,10 @@
                 motion:attributeName="crossfade"
                 motion:customFloatValue="0" />
 
+            <CustomAttribute
+                motion:attributeName="elevation"
+                motion:customFloatValue="0" />
+
         </Constraint>
 
         <Constraint
@@ -47,7 +51,6 @@
             android:id="@+id/flProfile"
             android:layout_width="match_parent"
             android:layout_height="78dp"
-            android:background="@color/purple_700"
             motion:layout_constraintBottom_toBottomOf="parent" />
 
         <Constraint
@@ -114,6 +117,10 @@
                 motion:attributeName="crossfade"
                 motion:customFloatValue="1" />
 
+            <CustomAttribute
+                motion:attributeName="elevation"
+                motion:customIntegerValue="50" />
+
         </Constraint>
 
         <Constraint
@@ -126,8 +133,7 @@
             android:id="@+id/flProfile"
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:background="@color/purple_200"
-            motion:layout_constraintBottom_toBottomOf="parent" />
+            motion:layout_constraintBottom_toBottomOf="parent"/>
 
         <Constraint
             android:id="@+id/viewTitleBg"
