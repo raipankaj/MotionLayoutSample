@@ -22,6 +22,13 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/viewTitleBg"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            motion:layout_constraintTop_toTopOf="parent" />
+
         <Constraint
             android:id="@+id/ivProfile"
             android:layout_width="58dp"
@@ -42,24 +49,6 @@
         </Constraint>
 
         <Constraint
-            android:id="@+id/separator"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            motion:layout_constraintBottom_toTopOf="@+id/flProfile" />
-
-        <Constraint
-            android:id="@+id/flProfile"
-            android:layout_width="match_parent"
-            android:layout_height="78dp"
-            motion:layout_constraintBottom_toBottomOf="parent" />
-
-        <Constraint
-            android:id="@+id/viewTitleBg"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            motion:layout_constraintTop_toTopOf="parent" />
-
-        <Constraint
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,6 +63,19 @@
                 motion:attributeName="textColor"
                 motion:customColorValue="@color/white" />
         </Constraint>
+
+        <Constraint
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/flProfile" />
+
+        <Constraint
+            android:id="@+id/flProfile"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+
 
         <Constraint
             android:id="@+id/ifbThumbsUp"
@@ -105,6 +107,12 @@
     <ConstraintSet android:id="@+id/end">
 
         <Constraint
+            android:id="@+id/viewTitleBg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toTopOf="parent"/>
+
+        <Constraint
             android:id="@+id/ivProfile"
             android:layout_width="120dp"
             android:layout_height="120dp"
@@ -124,26 +132,6 @@
         </Constraint>
 
         <Constraint
-            android:id="@+id/separator"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            motion:layout_constraintBottom_toTopOf="@+id/flProfile" />
-
-        <Constraint
-            android:id="@+id/flProfile"
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            motion:layout_constraintBottom_toBottomOf="parent"/>
-
-        <Constraint
-            android:id="@+id/viewTitleBg"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            motion:layout_constraintBottom_toTopOf="parent">
-
-        </Constraint>
-
-        <Constraint
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -157,6 +145,18 @@
                 motion:attributeName="textColor"
                 motion:customColorValue="@color/purple_700" />
         </Constraint>
+
+        <Constraint
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            motion:layout_constraintBottom_toTopOf="@+id/flProfile" />
+
+        <Constraint
+            android:id="@+id/flProfile"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            motion:layout_constraintBottom_toBottomOf="parent"/>
 
         <Constraint
             android:id="@+id/ifbThumbsUp"
