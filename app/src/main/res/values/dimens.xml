@@ -5,4 +5,5 @@
     <dimen name="profile_name_padding">14dp</dimen>
     <dimen name="profile_name_margin_top">12dp</dimen>
     <dimen name="profile_name_margin_start">18dp</dimen>
+    <dimen name="home_option_margin">32dp</dimen>
 </resources>

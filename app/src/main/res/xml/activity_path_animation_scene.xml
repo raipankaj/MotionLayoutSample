@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="12000">
+
+        <OnClick
+            motion:targetId="@id/ifvAllTechies"
+            motion:clickAction="toggle"/>
+
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentY="-0.2"
+                motion:percentX="0.6"
+                motion:framePosition="20"
+                motion:motionTarget="@id/ifvProfile"/>
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:rotation="10"
+                motion:motionTarget="@id/ifvProfile"
+                motion:framePosition="20" />
+
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX="0.7"
+                motion:percentY="0"
+                motion:framePosition="30"
+                motion:motionTarget="@id/ifvProfile" />
+
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="0"
+                motion:motionTarget="@id/ifvProfile"
+                motion:framePosition="30" />
+
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX="0.6"
+                motion:percentY="0.2"
+                motion:framePosition="40"
+                motion:motionTarget="@id/ifvProfile" />
+
+            <KeyAttribute
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:rotation="-10"
+                motion:motionTarget="@id/ifvProfile"
+                motion:framePosition="40" />
+
+            <KeyPosition
+                motion:percentY="0"
+                motion:percentX="0.4"
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@id/ifvProfile" />
+
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="0"
+                motion:motionTarget="@id/ifvProfile"
+                motion:framePosition="50" />
+
+            <KeyPosition
+                motion:percentX="0.6"
+                motion:percentY="-0.2"
+                motion:framePosition="60"
+                motion:motionTarget="@id/ifvProfile"
+                motion:keyPositionType="pathRelative" />
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:rotation="85"
+                motion:motionTarget="@id/ifvProfile"
+                motion:framePosition="60" />
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:rotation="45"
+                motion:motionTarget="@id/ifvProfile"
+                motion:framePosition="80" />
+
+            <!--Down side image-->
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentY="-0.2"
+                motion:percentX="0.6"
+                motion:framePosition="20"
+                motion:motionTarget="@id/ifvAllTechies"/>
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:rotation="-10"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:framePosition="20" />
+
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX="0.7"
+                motion:percentY="0"
+                motion:framePosition="30"
+                motion:motionTarget="@id/ifvAllTechies" />
+
+
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="0"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:framePosition="30" />
+
+            <KeyPosition
+                motion:keyPositionType="pathRelative"
+                motion:percentX="0.6"
+                motion:percentY="0.2"
+                motion:framePosition="40"
+                motion:motionTarget="@id/ifvAllTechies" />
+
+            <KeyAttribute
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:rotation="10"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:framePosition="40" />
+
+            <KeyPosition
+                motion:percentY="0"
+                motion:percentX="0.4"
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@id/ifvAllTechies" />
+
+            <KeyAttribute
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:rotation="0"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:framePosition="50" />
+
+            <KeyPosition
+                motion:percentX="0.6"
+                motion:percentY="-0.2"
+                motion:framePosition="60"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:keyPositionType="pathRelative" />
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:rotation="-85"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:framePosition="60" />
+
+            <KeyAttribute
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:rotation="-45"
+                motion:motionTarget="@id/ifvAllTechies"
+                motion:framePosition="80" />
+
+        </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/ifvProfile"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent">
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/ifvAllTechies"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent">
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/ifvProfile"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent">
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1"/>
+
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/ifvAllTechies"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" >
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1"/>
+
+        </Constraint>
+
+    </ConstraintSet>
+</MotionScene>

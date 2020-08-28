@@ -3,4 +3,6 @@
     <string name="profile_information">I\'m an android developer who loves to transform ideas into reality.\n\nApart from app development I also like to write articles on medium.com and speak at technical events.</string>
     <string name="profile_name">Pankaj Rai</string>
     <string name="kotlin_info">Kotlin 1.4 offer lots of exciting features for the app developers here are few of them\n\n1. SAM\n\n2. Named argument changes\n\n3. Callable reference with default arguments\n\n4. Trailing comma\n\n5. Exit from loop\n\n6. New APIs for collections</string>
+    <string name="custom_animation_path">Custom Animation Path</string>
+    <string name="animated_view">Animated View</string>
 </resources>

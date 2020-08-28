@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_path_animation_scene"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ifvProfile"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@drawable/profile"
+        app:altSrc="@drawable/butterfly"
+        android:scaleType="centerCrop"
+        android:layout_margin="12dp"
+        app:roundPercent="50" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/ifvAllTechies"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@drawable/kotlin"
+        app:altSrc="@drawable/tulips"
+        android:scaleType="centerCrop"
+        android:layout_margin="12dp"
+        app:roundPercent="50" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
