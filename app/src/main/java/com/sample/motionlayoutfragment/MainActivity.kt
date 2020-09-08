@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         btCustomPath.setOnClickListener {
             launchActivity<PathAnimationActivity> {}
         }
+
+        btBackdrop.setOnClickListener {
+            launchActivity<BackdropActivity> {}
+        }
     }
 
     private inline fun <reified T>launchActivity(intentFunc: Intent.() -> Unit?) {

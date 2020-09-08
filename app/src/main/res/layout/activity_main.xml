@@ -21,7 +21,18 @@
         android:layout_margin="@dimen/home_option_margin"
         android:text="@string/custom_animation_path"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btBackdrop"
         app:layout_constraintTop_toBottomOf="@+id/btAnimatedView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/home_option_margin"
+        android:text="@string/backdrop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCustomPath" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
